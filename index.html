@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Click Challenge Game</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="gameContainer">
+  <div class="container">
+    <h1>Click Challenge Game</h1>
+
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="modeToggle" />
+        <span class="slider"></span>
+      </label>
+      <span id="modeLabel">Light Mode</span>
+    </div>
+
+    <div id="timerDisplay">10.00</div>
     <div id="scoreDisplay">Score: 0</div>
-    <div id="timerDisplay">Time: 10</div>
+    <div id="highScoreDisplay">High Score: 0</div>
 
     <button id="startButton">Start Game</button>
-    <button id="clickButton" style="display: none;">Click Me!</button>
+    <button id="clickButton" style="display:none;">Click Me!</button>
 
-    <div id="comboContainer"></div>
+    <div id="comboText" class="fade"></div>
   </div>
 
   <script src="script.js"></script>
