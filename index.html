@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Challenge Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <h1>Click the Button!</h1>
-  <button onclick="addPoint()">Click Me!</button>
-  <button onclick="resetScore()">Reset</button>
-  <p id="score">Score: 0</p>
-  <link rel="stylesheet" href="style.css" />
+  <div id="gameContainer">
+    <div id="scoreDisplay">Score: 0</div>
+    <div id="timerDisplay">Time: 10</div>
 
-  
+    <button id="startButton">Start Game</button>
+    <button id="clickButton" style="display: none;">Click Me!</button>
+
+    <div id="comboContainer"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
+</html>
